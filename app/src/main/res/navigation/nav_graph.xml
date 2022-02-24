@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/mainDashBoard"
+        android:name="com.example.tourmate.MainDashBoard"
+        android:label="fragment_main_dash_board"
+        tools:layout="@layout/fragment_main_dash_board" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.tourmate.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_eventListFragment"
+            app:destination="@id/eventListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_Event"
+        android:name="com.example.tourmate.Add_EventFragment"
+        android:label="fragment_add__event"
+        tools:layout="@layout/fragment_add__event" >
+        <action
+            android:id="@+id/action_add_Event_to_eventListFragment"
+            app:destination="@id/eventListFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@+id/add_Event"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventListFragment"
+        android:name="com.example.tourmate.EventListFragment"
+        android:label="fragment_event_list"
+        tools:layout="@layout/fragment_event_list" >
+        <action
+            android:id="@+id/action_eventListFragment_to_mainDashBoard"
+            app:destination="@id/mainDashBoard"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_eventListFragment_to_eventDashBoard"
+            app:destination="@id/eventDashBoard" />
+        <action
+            android:id="@+id/action_eventListFragment_to_compassFragment"
+            app:destination="@id/compassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventDashBoard"
+        android:name="com.example.tourmate.EventDashBoard"
+        android:label="fragment_event_dash_board"
+        tools:layout="@layout/fragment_event_dash_board" >
+        <action
+            android:id="@+id/action_eventDashBoard_to_momentGallary"
+            app:destination="@id/momentGallary" />
+    </fragment>
+    <fragment
+        android:id="@+id/momentGallary"
+        android:name="com.example.tourmate.MomentGallary"
+        android:label="fragment_moment_gallary"
+        tools:layout="@layout/fragment_moment_gallary" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.example.tourmate.WeatherFragment"
+        android:label="fragment_weather"
+        tools:layout="@layout/fragment_weather" />
+    <fragment
+        android:id="@+id/nearByFragment"
+        android:name="com.example.tourmate.NearByFragment"
+        android:label="fragment_near_by"
+        tools:layout="@layout/fragment_near_by" />
+    <fragment
+        android:id="@+id/compassFragment"
+        android:name="com.example.tourmate.CompassFragment"
+        android:label="fragment_compass"
+        tools:layout="@layout/fragment_compass" />
+    <fragment
+        android:id="@+id/locationPic"
+        android:name="com.example.tourmate.LocationPic"
+        android:label="fragment_location_pic"
+        tools:layout="@layout/fragment_location_pic" />
+    <fragment
+        android:id="@+id/currentWeatherFragment"
+        android:name="com.example.tourmate.CurrentWeatherFragment"
+        android:label="fragment_current_weather"
+        tools:layout="@layout/fragment_current_weather" />
+
+</navigation>

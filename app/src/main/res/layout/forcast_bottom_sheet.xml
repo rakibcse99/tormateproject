@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/forecastListBottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="3dp"
+    android:background="#fff"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="180dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:id="@+id/titleHeaderTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:fontFamily="@font/bungee_inline"
+        android:gravity="center"
+        android:padding="6dp"
+        android:text="Forecast List"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/forecastRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+</LinearLayout>

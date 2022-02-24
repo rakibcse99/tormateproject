@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LocationPic">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/locationPicRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/luploadingProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true" />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:padding="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/takeLocationPicbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="50dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:src="@drawable/ic_camera" />
+
+</RelativeLayout>

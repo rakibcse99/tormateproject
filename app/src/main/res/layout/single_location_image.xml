@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/locationPicView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_add_black_24dp"
+        />
+
+    <Button
+        android:id="@+id/deleteLocationImagebtn"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:text="delete" />
+
+    <Button
+        android:id="@+id/dlocationPicBtn"
+        android:layout_width="133dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:text="download" />
+
+
+
+</LinearLayout>

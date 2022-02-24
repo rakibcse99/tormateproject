@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".WeatherFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:fontFamily="@font/bungee_inline"
+                android:text="Current Weather"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/celcius"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:background="#039BE5"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="°C"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/fahrenheit"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="#F4511E"
+                    android:fontFamily="@font/bungee_inline"
+                    android:text="°F"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/wAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Weather in Sāmāir, BD"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/wIcon"
+                    android:layout_width="58dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/weather" />
+
+                <TextView
+                    android:id="@+id/wDgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="2"
+                    android:text="25 °C"
+                    android:textColor="@color/black"
+                    android:textSize="60sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wCondition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Haze"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/wdateTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12:11 pm Dec 15 2019"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="102dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Wind: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wWind"
+                    android:layout_width="272dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Light breeze, 3.1 m/s"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Cloudiness: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wCloudness"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Sky is clear"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Pressure: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wPressure"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="1018 hpa"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Humidity: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wHumidity"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="65 %"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sunrise: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wSunrise"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="06:32 AM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="23dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sunset: "
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/wSunset"
+                    android:layout_width="117dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="5:13 PM"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <include layout="@layout/forcast_bottom_sheet" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

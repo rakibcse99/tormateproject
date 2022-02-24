@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".NearByFragment">
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <fragment
+          android:id="@+id/nearbymap"
+          android:name="com.google.android.gms.maps.SupportMapFragment"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".MapsActivity" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+         <Button
+             android:id="@+id/btn_restaurant"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+             android:text="Restaurant" />
+
+         <Button
+             android:id="@+id/btn_hospital"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+             android:text="Hospital" />
+
+         <Button
+             android:id="@+id/btn_atm"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+             android:text="ATM" />
+      </LinearLayout>
+
+   </RelativeLayout>
+</layout>

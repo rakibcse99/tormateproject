@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_event"
+            android:title="Event" />
+    </group>
+
+    <item android:title="Location">
+        <menu>
+
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_nearby"
+                    android:icon="@drawable/ic_near_me"
+                    android:title="Nearby Place" />
+                <item
+                    android:id="@+id/nav_weather"
+                    android:icon="@drawable/ic_cloud"
+                    android:title="Weather" />
+            </group>
+
+
+        </menu>
+    </item>
+
+    <item android:title="Privacy">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_power"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+
+</menu>

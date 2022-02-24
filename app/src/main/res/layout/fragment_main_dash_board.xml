@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainDashBoard">
+
+
+    <TextView
+        android:id="@+id/eventNameTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/audiowide"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        tools:text="Tour Name" />
+
+
+    <TextView
+        android:id="@+id/budgetTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventNameTV"
+        android:gravity="center"
+        tools:text="Budget : 10000"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/expenseTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/budgetTV"
+        android:gravity="center"
+        tools:text="Expense : 10000"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/remainingTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expenseTV"
+        android:gravity="center"
+        tools:text="Remaining : 10000"
+        android:textColor="@color/black"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/remainingTV"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/expenseRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+
+        android:id="@+id/addExpenseBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:clickable="true"
+        android:src="@drawable/ic_add_black_24dp" />
+
+
+</RelativeLayout>

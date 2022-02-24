@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "444013434340",
+    "firebase_url": "https://turmatecv-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "turmatecv",
+    "storage_bucket": "turmatecv.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:444013434340:android:af4c7e0757525d20b523f1",
+        "android_client_info": {
+          "package_name": "com.example.tourmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "444013434340-fqkhq6qgoqou4t8pb36dqaancdou4jc6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCllQwYP9Y37Uxp-g5hKFpBUN-AqATQREs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "444013434340-fqkhq6qgoqou4t8pb36dqaancdou4jc6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

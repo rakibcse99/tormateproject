@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="6dp"
+    android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+    android:orientation="vertical"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="6dp"
+        android:weightSum="3"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/row_eventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Study Tour"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/row_tourLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dhaka - Cox's Bazar"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/row_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Departure : 23/32/12"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/row_buget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Budget : 1000"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:id="@+id/row_createEventdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23/32/19 02:34 PM"
+                    android:textStyle="italic"/>
+
+                <TextView
+                    android:id="@+id/row_daysLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="Have a Safe Journey"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/row_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:padding="13dp"
+                android:text="&#8942;"
+                android:textColor="#FF3D00"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

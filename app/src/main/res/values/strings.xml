@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Tour Mate</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_maps">Map</string>
+    //Emran
+    <string name="nearby_place_api"> AIzaSyBO6tRnAJlK2MbIkqTLiO2-U0triCHE0-8</string>
+    <string name="places_api"> AIzaSyB22FF0TCBj8lihZP2CkHFg--SSkTxYUe4</string>
+    <string name="weather_api_key">f4f1e513f8351f02420cfcc85fc08378</string>
+</resources>
